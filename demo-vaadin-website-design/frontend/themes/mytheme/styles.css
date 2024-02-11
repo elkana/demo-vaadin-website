@@ -1,0 +1,6 @@
+@import 'pricing.css';
+
+html {
+    --lumo-primary-color: green;
+    --lumo-font-family: Tahoma;
+  }

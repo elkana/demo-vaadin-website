@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../demo-vaadin-website-design"
+		}
+	],
+	"settings": {
+		"java.compile.nullAnalysis.mode": "disabled",
+		"java.configuration.updateBuildConfiguration": "automatic"
+	}
+}

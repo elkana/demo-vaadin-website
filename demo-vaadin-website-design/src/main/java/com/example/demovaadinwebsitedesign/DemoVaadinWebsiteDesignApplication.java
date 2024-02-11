@@ -9,15 +9,20 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.context.event.ApplicationReadyEvent;
 import org.springframework.context.event.EventListener;
 import org.springframework.core.env.Environment;
+import com.vaadin.flow.component.page.AppShellConfigurator;
+import com.vaadin.flow.theme.Theme;
 
+@Theme("mytheme")
 @SpringBootApplication
-public class DemoVaadinWebsiteDesignApplication {
+public class DemoVaadinWebsiteDesignApplication implements AppShellConfigurator {
 	@Autowired
 	Environment env;
+
 	public static void main(String[] args) {
 		SpringApplication.run(DemoVaadinWebsiteDesignApplication.class, args);
 	}
-@EventListener({ApplicationReadyEvent.class})
+
+	@EventListener({ ApplicationReadyEvent.class })
 	void applicationReadyEvent() {
 		if (Arrays.stream(env.getActiveProfiles())
 				.anyMatch(env -> env.equalsIgnoreCase("dev-h2"))) {

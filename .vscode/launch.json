@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-DemoVaadinWebsiteDesignApplication<demo-vaadin-website-design>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.example.demovaadinwebsitedesign.DemoVaadinWebsiteDesignApplication",
+            "projectName": "demo-vaadin-website-design",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}

@@ -1,0 +1,10 @@
+.price-header {
+    text-align: center;
+    padding: 1em;
+}
+
+.price-theme1 {
+    padding: 2em;
+    border: 0.5px solid #9E9E9E;
+    border-radius: 15px 50px 30px 5px;
+}
